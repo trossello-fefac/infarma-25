@@ -18,7 +18,7 @@ const translations = {
     gdprClause:
       "D’acord amb el Reglament General de Protecció de Dades (GDPR), les seves dades personals seran tractades per la FEFAC (Federació d’Associacions de Farmàcies de Catalunya) amb CIF G-63397865, amb la finalitat de gestionar la seva inscripció a l’esdeveniment. Per a més informació sobre el tractament de les seves dades i els seus drets, pot contactar amb nosaltres a través del correu electrònic fefac@fefac.cat.",
     pageTitle: "Obligacions Empresarials - Oficina de Farmàcia",
-    headerTitle: "Auto-avalua les obligacions empresarials de la teva farmàcia",
+    headerTitle: "Obligacions empresarials de la Farmàcia",
     headerDescription:
       "Detecta possibles incompliments i les sancions a les quals podries estar exposat.",
     questions: [
@@ -93,7 +93,7 @@ const translations = {
       gdprClause:
         "De acuerdo con el Reglamento General de Protección de Datos (GDPR), sus datos personales serán tratados por la FEFAC (Federación de Asociaciones de Farmacias de Cataluña) con CIF G-63397865, con la finalidad de gestionar su inscripción al evento. Para más información sobre el tratamiento de sus datos y sus derechos, puede contactarnos a través del correo electrónico fefac@fefac.cat.",
       pageTitle: "Obligaciones Empresariales - Oficina de Farmacia",
-      headerTitle: "Autoevalúa las obligaciones empresariales de tu farmacia",
+      headerTitle: "Obligaciones empresariales de tu Farmacia",
       headerDescription:
         "Detecta posibles incumplimientos y las sanciones a las cuales podrías estar expuesto.",
       questions: [
@@ -176,7 +176,7 @@ const translations = {
     // Función para cambiar el idioma
     function changeLanguage(language) {
       const t = translations[language]; // Obtener las traducciones del idioma seleccionado
-        
+
         // Actualizar título del diagnóstico
         document.getElementById("diagnosis-title").textContent = t.diagnosisTitle;
 
