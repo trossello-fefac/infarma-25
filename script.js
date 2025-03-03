@@ -5,6 +5,7 @@ localStorage.removeItem("preferredLanguage"); // Eliminar preferencia de idioma
 
 // Variable global para activar/desactivar el killswitch
 const isFormDisabled = false; // Cambia a true para activar el killswitch
+const sendToGoogleForm = true;
 
 // Array para almacenar las respuestas del usuario
 let responses = [];
@@ -381,6 +382,10 @@ const translations = {
         // Mostrar mensaje de plazas completas
         document.getElementById("info-stand").classList.remove("hidden");
         return;
+      }
+      if (sendToGoogleForm) {
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeqiqmgi336u02nYvr_AzZDr6LkeAgvosRxPjg_wRmWYRPkcQ/viewform?usp=header";
+            return;
       }
 
       // Mostrar formulario
