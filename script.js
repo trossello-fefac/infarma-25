@@ -12,6 +12,7 @@ let responses = [];
 
 const translations = {
   ca: {
+    diagnosisTitle: "Diagnòstic",
     formIntroText:
           "La FEFAC impartirà una sessió a Infarma amb consells pràctics per complir amb aquestes obligacions empresarials i evitar possibles sancions als titulars de farmàcia. Omple el formulari per inscriure't i assegurar-te una plaça.",
     gdprClause:
@@ -86,6 +87,7 @@ const translations = {
     },
   },
   es: {
+    diagnosisTitle: "Diagnóstico",
     formIntroText:
       "La FEFAC impartirá una sesión en Infarma con consejos prácticos para cumplir con estas obligaciones empresariales y evitar posibles sanciones a los titulares de farmacia. Rellena el formulario para inscribirte y asegurarte una plaza.",
       gdprClause:
@@ -174,6 +176,10 @@ const translations = {
     // Función para cambiar el idioma
     function changeLanguage(language) {
       const t = translations[language]; // Obtener las traducciones del idioma seleccionado
+        
+        // Actualizar título del diagnóstico
+        document.getElementById("diagnosis-title").textContent = t.diagnosisTitle;
+
 
       // Actualizar los textos dinámicos
       document.getElementById("page-title").textContent = t.pageTitle;
@@ -332,7 +338,7 @@ const translations = {
       const t = translations[savedLanguage];
 
       // Crear el enlace mailto con los datos del formulario
-      const mailtoLink = `mailto:trossello@fefac.cat?subject=Inscripció%20a%20la%20xerrada%20d'Infarma&body=Nom i cognoms: ${encodeURIComponent(
+      const mailtoLink = `mailto:mruiz@fefac.cat?subject=Inscripció%20a%20la%20xerrada%20d'Infarma&body=Nom i cognoms: ${encodeURIComponent(
         name
       )}%0D%0ACorreu electrònic: ${encodeURIComponent(
         email
