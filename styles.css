@@ -192,5 +192,10 @@ body {
   margin-top: 10px;
 }
 
+#form-intro-text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
 
 }
