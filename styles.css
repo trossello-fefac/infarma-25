@@ -1,0 +1,196 @@
+/* Estilo general */
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+.header {
+  background-color: #C50636; /* Vermell corporatiu */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif; /* Tipografía para encabezados */
+}
+
+.header p {
+  font-size: 1rem;
+}
+
+/* Contenedor principal */
+.container {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+
+/* Tarjetas de preguntas */
+.card {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  /* Centrar contenido dentro de la tarjeta */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+}
+
+/* Títulos de las tarjetas alineados a la izquierda */
+.card h4 {
+  font-size: 1.3rem;
+  text-align: left; /* Alineación a la izquierda */
+}
+
+/* Descripción de las preguntas justificada */
+.card p.question-description {
+  font-size: .9rem;
+  text-align: justify; /* Justificar texto */
+}
+
+/* Ocultar tarjetas por defecto */
+.card.hidden {
+  display: none !important; /* Oculta elementos con la clase .hidden */
+}
+
+/* Importes de sanciones y total en negrita */
+#diagnosis-text p,
+#total-sanctions {
+  /*font-weight: bold; /* Negrita para importes y total */
+}
+
+/* Botones responsivos */
+.button-container {
+  display: flex; /* Configurar como contenedor flex */
+  justify-content: center; /* Centrar horizontalmente los botones */
+  gap: 10px; /* Espaciado entre botones */
+}
+
+.btn {
+  display: inline-block;
+  background-color: #C50636; /* Color corporativo */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a0042c; /* Color más oscuro al pasar el cursor */
+}
+
+
+/* Texto "Stand F51" en negrita */
+#info-stand p,
+#stand-message {
+  font-weight: bold; /* Negrita para importes y total */
+}
+
+.language-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px; /* Espaciado entre las banderas */
+}
+
+.flag-button {
+  cursor: pointer;
+  border: none;
+  background-color: white; /* Fondo blanco del círculo */
+  border-radius: 50%; /* Hace que el contenedor sea un círculo */
+  width: 40px; /* Tamaño del círculo */
+  height: 40px; /* Tamaño del círculo */
+  display: flex; /* Flexbox para centrar contenido */
+  align-items: center; /* Centra la bandera verticalmente */
+  justify-content: center; /* Centra la bandera horizontalmente */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el círculo */
+}
+
+.flag-button img {
+  width: auto; /* Ajustar automáticamente el ancho */
+  max-width: calc(90%); /* Asegura que la bandera no exceda el tamaño del círculo */
+
+  /* Desplazar la bandera hacia abajo */
+  transform: translateY(5px); /* Ajusta este valor según sea necesario */
+}
+
+/* Ajustar el formulario dentro de la tarjeta */
+#form {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  padding: 20px; /* Espaciado interno uniforme */
+  width: 100%; /* Asegura que el formulario ocupe todo el ancho de la tarjeta */
+  box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+}
+
+/* Etiquetas alineadas a la izquierda */
+#form label {
+  text-align: left; /* Alineación a la izquierda */
+  width: 100%; /* Las etiquetas ocupan todo el ancho disponible */
+  margin-left: 5%; /* Espaciado entre etiqueta y campo */
+  margin-bottom: 5px; /* Espaciado entre etiqueta y campo */
+  font-weight: bold; /* Opcional: resaltar las etiquetas en negrita */
+}
+
+/* Campos de texto (90% del ancho de la tarjeta, alineados a la izquierda) */
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="tel"] {
+  width: 90%; /* Los campos ocupan exactamente el 90% del ancho de la tarjeta */
+  margin-left: 5%; /* Deja un margen igual a ambos lados (5%) */
+  margin-bottom: 15px; /* Espaciado entre campos */
+  padding: 10px; /* Espaciado interno dentro del campo */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluir padding y borde en el cálculo del ancho total */
+}
+
+/* Centrar el botón de enviar inscripción */
+#form button {
+  width: 90%; /* Ajustar automáticamente el tamaño del botón */
+  margin-top: 20px; /* Añadir espacio superior al botón */
+  margin-left: 5%;
+  margin-right: 5%;
+  /*align-self: center; /* Centra el botón horizontalmente dentro del formulario */
+  background-color: #C50636; /* Color corporativo */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#form button:hover {
+  background-color: #a0042c; /* Color más oscuro al pasar el cursor */
+}
+
+#gdpr-clause {
+  font-size: 0.8rem;
+  color: red;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+
+}
