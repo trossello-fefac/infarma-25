@@ -384,7 +384,7 @@ const translations = {
         return;
       }
       if (sendToGoogleForm) {
-            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeqiqmgi336u02nYvr_AzZDr6LkeAgvosRxPjg_wRmWYRPkcQ/viewform?usp=header";
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd3NSRAupvSArIOHfjyEy0MRumtcviJhx5ViIna2bgGGo-S6A/viewform";
             return;
       }
 
