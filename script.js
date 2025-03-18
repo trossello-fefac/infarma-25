@@ -4,7 +4,7 @@ localStorage.removeItem("preferredLanguage"); // Eliminar preferencia de idioma
 // Parte 1 de 7: Variables globales y configuración inicial
 
 // Variable global para activar/desactivar el killswitch
-const isFormDisabled = false; // Cambia a true para activar el killswitch
+const isFormDisabled = true; // Cambia a true para activar el killswitch
 const sendToGoogleForm = true;
 
 // Array para almacenar las respuestas del usuario
